@@ -1,0 +1,7 @@
+<h3> Pig Latinized:
+<% if @user_input.split.size == 1%>
+  <%= @piglatinizer.piglatinize(@user_input) %>
+<% else %>
+  <%= @piglatinizer.to_pig_latin(@user_input) %>
+<% end %>
+</h3>
